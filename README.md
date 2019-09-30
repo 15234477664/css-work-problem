@@ -31,21 +31,62 @@ letter-spacing:3px;
 ```css
 resize: none
 ```
-超出部分变为.....
+## 超出部分变为.....
 ```css
 overflow: hidden;
 text-overflow:ellipsis;
 white-space: nowrap;
 ```
-多行以后变成......
+## 多行以后变成......
 ```css
 display: -webkit-box;  
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 2;
 overflow: hidden;
 ```
-竖排文字居中
+## 竖排文字居中
 ```css
 writing-mode:vertical-lr;
 text-align: center;
+```
+## 旋转180度
+```css
+transform: rotate(180deg);  
+```
+## 修改input单选框样式：
+```css
+.elect_btn_img{
+    width:0.52rem;
+    height:0.52rem;
+    position: absolute;
+    background:url("../images/cart/check1.png");
+    background-size:0.52rem 0.52rem;
+    border-radius:50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    border: 0;
+}
+.elect_btn_img:checked {
+    background:url("../images/cart/check2.png");
+    background-size:0.52rem 0.52rem;
+}
+```
+## 修改selet
+```css
+select{
+    padding: 0 10px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url(../images/arrow.png)no-repeat scroll right center transparent;
+    background-size:20px auto;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+}
 ```
