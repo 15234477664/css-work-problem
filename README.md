@@ -90,3 +90,19 @@ select{
     /*为下拉小箭头留出一点位置，避免被文字覆盖*/
 }
 ```
+## 在标题两边加边线
+```css
+.box_sub-title:before, .box_sub-title:after {
+    display: inline-block;
+    content: '';
+    border-top: 1px solid #484848;
+    width:50px;
+    margin: 10px 30px;
+}
+```
+## 实星五角星：&starf;
+## 空星五角星：&star;
+## a标签去除点击的蓝色
+```css
+-webkit-tap-highlight-color:transparent;
+```
