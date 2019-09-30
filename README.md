@@ -106,3 +106,76 @@ select{
 ```css
 -webkit-tap-highlight-color:transparent;
 ```
+## CSS水平垂直居中常见方法总结：
+1.定位布局
+```html
+<div class="box">
+    <div class="content">
+    </div>
+</div>
+```
+```css
+.box {
+    background-color: #FF8C00;
+    width: 300px;
+    height: 300px;  position: relative;}
+.content {
+    background-color: #F00;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -50px;
+}
+```
+2.flex布局：
+```html
+<div class="box">
+    <div class="content">
+    </div>
+</div>
+```
+```css
+.box {
+    background-color: #FF8C00;
+    width: 300px;
+    height: 300px;
+    display: flex;//flex布局
+    justify-content: center;//使子项目水平居中align-items: center;//使子项目垂直居中}
+.content {
+    background-color: #F00;
+    width: 100px;
+    height: 100px;
+}
+```
+3.table-cell布局：
+因为table-cell相当与表格的td，td为行内元素，无法设置宽和高，所以嵌套一层，嵌套一层必须设置display: inline-block;td的背景覆盖了橘黄色，不推荐使用
+```html
+<div class="box">
+    <div class="content">
+        <div class="inner">
+        </div>
+    </div>
+</div>
+```
+```css
+.box {
+    background-color: #FF8C00;//橘黄色
+    width: 300px;
+    height: 300px;
+    display: table;
+}
+.content {
+    background-color: #F00;//红色
+    display: table-cell;
+    vertical-align: middle;//使子元素垂直居中
+    text-align: center;//使子元素水平居中
+}
+.inner {
+    background-color: #000;//黑色
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+}
+```
