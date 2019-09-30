@@ -196,3 +196,8 @@ input,textarea {
     padding: 0px;
     outline: none;}
  ```
+ ## 苹果浏览器safari对new Date(‘1937-01-01‘)不支持
+ ```html
+ 用.replace(/-/g, "/")函数替换掉中划线即可
+var from_date = new Date(com_time.replace(/-/g,'/'));
+ ```
