@@ -179,3 +179,20 @@ select{
     height: 20%;
 }
 ```
+## 禁止复制功能：
+```css
+* {
+     -webkit-touch-callout:none;
+     -webkit-user-select:none;
+     -khtml-user-select:none;
+     -moz-user-select:none;
+     -ms-user-select:none;
+     user-select:none;
+ }
+ /*设置IOS页面长按不可复制粘贴，但是IOS上出现input、textarea不能输入，因此将使用-webkit-user-select:auto;*/
+input,textarea {
+    -webkit-user-select:auto; /*webkit浏览器*/
+    margin: 0px;
+    padding: 0px;
+    outline: none;}
+ ```
