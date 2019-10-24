@@ -142,7 +142,8 @@ select{
     width: 300px;
     height: 300px;
     display: flex;//flex布局
-    justify-content: center;//使子项目水平居中align-items: center;//使子项目垂直居中}
+    justify-content: center;//使子项目水平居中
+    align-items: center;//使子项目垂直居中}
 .content {
     background-color: #F00;
     width: 100px;
