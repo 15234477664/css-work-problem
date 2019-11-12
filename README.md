@@ -39,10 +39,13 @@ white-space: nowrap;
 ```
 ## 多行以后变成......
 ```css
-display: -webkit-box;  
--webkit-box-orient: vertical;
--webkit-line-clamp: 2;
 overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+ -webkit-line-clamp: 3;
+/* autoprefixer: off */
+-webkit-box-orient: vertical;
+/* autoprefixer: on */
 ```
 ## 竖排文字居中
 ```css
