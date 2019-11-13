@@ -205,3 +205,35 @@ input,textarea {
  用.replace(/-/g, "/")函数替换掉中划线即可
 var from_date = new Date(com_time.replace(/-/g,'/'));
  ```
+通过 @keyframes 规则，您能够创建动画
+```html
+<div class="box-one"></div>
+```
+```css 
+ .box-one{
+     width:100px;
+     height:100px;
+     animation:myfirst 5s infinite;
+     -moz-animation:myfirst 5s infinite; /* Firefox */
+     -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
+     -o-animation:myfirst 5s infinite; /* Opera */
+ }
+@keyframes myfirst
+ {
+     0%   {
+         background: red;
+         transform: translateY(-30px);
+     }
+     25%  {background: yellow;
+         transform: translateY(0px);}
+     50%  {background: blue;
+         transform: translateY(30px);}
+     70%  {background: greenyellow;
+         transform: translateY(0px);}
+     100% {background: green;
+         transform:translateY(0px)rotate(30deg);
+         -ms-transform:rotate(360deg); /* IE 9 */
+         -webkit-transform:translateY(0px)rotate(30deg); /* Safari and Chrome */}
+ }
+ 注：myfirst  指动画名字，自己定义
+```
