@@ -205,7 +205,7 @@ input,textarea {
  用.replace(/-/g, "/")函数替换掉中划线即可
 var from_date = new Date(com_time.replace(/-/g,'/'));
  ```
-通过 @keyframes 规则，您能够创建动画
+## 通过 @keyframes 规则，您能够创建动画
 ```html
 <div class="box-one"></div>
 ```
