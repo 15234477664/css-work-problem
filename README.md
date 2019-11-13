@@ -232,8 +232,6 @@ var from_date = new Date(com_time.replace(/-/g,'/'));
          transform: translateY(0px);}
      100% {background: green;
          transform:translateY(0px)rotate(30deg);
-         -ms-transform:rotate(360deg); /* IE 9 */
-         -webkit-transform:translateY(0px)rotate(30deg); /* Safari and Chrome */}
  }
  注：myfirst  指动画名字，自己定义
 ```
